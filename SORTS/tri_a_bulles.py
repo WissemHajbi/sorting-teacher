@@ -11,7 +11,4 @@ def tri_a_bulles(array):
                 test=True
     return array
 
-
-
-
 tri_a_bulles(array)

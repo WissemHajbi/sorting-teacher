@@ -7,7 +7,7 @@ from logic import SortingUI
         
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    SortingTeacher = SortingUI()
+    SortingTeacher = SortingUI() 
     SortingTeacher.show()
     try:
         sys.exit(app.exec())
