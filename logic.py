@@ -4,7 +4,7 @@ from PyQt6 import uic
 from SORTS.tri_a_bulles import tri_a_bulles
 import random
 class SortingUI(QMainWindow):
-    def __init__(self):
+    def __init__(self,sorting_method):
         super().__init__()
         uic.loadUi('UI/gui.ui',self)
         self.setWindowTitle("Sorting Teacher")
@@ -17,8 +17,13 @@ class SortingUI(QMainWindow):
         self.j=0
         self.pushButton_CLEAR.clicked.connect(self.sort_clear)
         self.pushButton_RESET.clicked.connect(self.reset)
-        self.pushButton_SORT.clicked.connect(self.sort_tri_insertion)
-    
+        if sorting_method == "insertion":
+            self.pushButton_SORT.clicked.connect(self.sort_tri_insertion)
+        elif sorting_method == "bulles":
+            self.pushButton_SORT.clicked.connect(self.sort_tri_a_bulles)
+        else:
+            self.pushButton_SORT.clicked.connect(self.sort_tri_a_bulles)
+            
     def clear_color(self):
         array=self.get_array()
         for i,j  in enumerate(array):
@@ -56,7 +61,8 @@ class SortingUI(QMainWindow):
 
         array=[self.arr1,self.arr2,self.arr3,self.arr4,self.arr5,self.arr6,self.arr7,self.arr8,self.arr9,self.arr10]
         return array        
-            
+    
+    # tri a bulles
     def sort_tri_a_bulles(self):   
         self.clear_color()
         array=self.get_array()
@@ -76,7 +82,8 @@ class SortingUI(QMainWindow):
             self.counter += 1
         else:
             self.counter = 0
-    
+            
+    # tri par insertion
     def sort_tri_insertion(self):
         self.clear_color()
         array=self.get_array()
