@@ -2,10 +2,10 @@
 sorting teacher is an app to help student understanding (visually) sorting methods 
 
 ## done :
-* 1 - tri a bulles (done)
+* 1 - tri a bulles 
 * 2 - tri par insertion 
+* 3 - tri par selection 
  
 ## coming soon:
-
-* 3 - tri shell
-* 4 - tri par sélection
+* 4 - tri shell
+* 5 - tri rapide
