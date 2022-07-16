@@ -226,7 +226,6 @@
     </property>
     <property name="font">
      <font>
-      <family>Dubai Medium</family>
       <pointsize>10</pointsize>
       <italic>false</italic>
      </font>
@@ -246,9 +245,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -270,9 +267,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Small Semibol</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -294,9 +289,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -318,9 +311,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -342,9 +333,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -366,9 +355,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -393,9 +380,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -417,9 +402,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -441,9 +424,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -465,9 +446,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Variable Display Semib</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -489,7 +468,6 @@
     </property>
     <property name="font">
      <font>
-      <family>Dubai Medium</family>
       <pointsize>7</pointsize>
       <italic>false</italic>
      </font>
@@ -509,13 +487,31 @@
     </property>
     <property name="font">
      <font>
-      <family>Dubai Medium</family>
       <pointsize>7</pointsize>
       <italic>false</italic>
      </font>
     </property>
     <property name="text">
      <string>RESET</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_RANDOM">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>RANDOM</string>
     </property>
    </widget>
   </widget>

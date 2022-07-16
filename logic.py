@@ -1,5 +1,4 @@
 from PyQt6.QtWidgets import QMainWindow
-from PyQt6.QtGui import QIcon
 from PyQt6 import uic
 from SORTS.tri_a_bulles import tri_a_bulles
 import random
@@ -20,6 +19,7 @@ class SortingUI(QMainWindow):
         self.j = 0
         self.pushButton_CLEAR.clicked.connect(self.sort_clear)
         self.pushButton_RESET.clicked.connect(self.reset)
+        self.pushButton_RANDOM.clicked.connect(self.random)
         self.sorting_method = sorting_method
         if sorting_method == "insertion":
             self.pushButton_SORT.clicked.connect(self.sort_tri_insertion)
@@ -28,6 +28,18 @@ class SortingUI(QMainWindow):
             self.pushButton_SORT.clicked.connect(self.sort_tri_a_bulles)
         elif sorting_method == "selection":
             self.pushButton_SORT.clicked.connect(self.sort_tri_selection)
+
+    def random(self):
+        self.sort_clear()
+        random_array = [
+            random.randint(0, 100) for i in range(10)
+        ]
+        array = self.get_array()
+        for i in range(len(random_array)):
+            array[i].setText(str(random_array[i]))
+        self.savedArray = [
+            str(i) for i in random_array
+        ]
 
     def clear_color(self):
         array = self.get_array()
@@ -101,7 +113,7 @@ class SortingUI(QMainWindow):
 
         if self.insertion_found == False and self.action == False:
             self.j = self.counter
-        
+
         if self.counter < len(array):
             if (array[self.j-1] > array[self.j]) and (self.j > 0):
                 if self.action:
@@ -117,7 +129,7 @@ class SortingUI(QMainWindow):
             else:
                 self.change(self.j, 0, "valid")
                 self.insertion_found = False
-                self.counter += 1 
+                self.counter += 1
         else:
             self.counter = 0
 
@@ -148,7 +160,7 @@ class SortingUI(QMainWindow):
     def reset(self):
         self.clear_color()
         if self.sorting_method == "insertion":
-            self.counter = 1 
+            self.counter = 1
         else:
             self.counter = 0
         self.action = False
