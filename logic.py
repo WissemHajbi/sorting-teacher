@@ -28,7 +28,9 @@ class SortingUI(QMainWindow):
             self.pushButton_SORT.clicked.connect(self.sort_tri_a_bulles)
         elif sorting_method == "selection":
             self.pushButton_SORT.clicked.connect(self.sort_tri_selection)
-
+        style="DarkStyle.qss"
+        with open(style,"r") as s:
+            self.setStyleSheet(s.read())
     def random(self):
         self.sort_clear()
         random_array = [
